@@ -8,9 +8,9 @@ function App() {
     <>
       <div id="container">
         <h1> 2025 Puppy Bowl (React Edition)</h1>
-        <div>
+        {/* <div>
           <Link to="/">Home</Link>
-        </div>
+        </div> */}
         <div>
           <Routes>
             <Route path="/" element={<Home />}></Route>

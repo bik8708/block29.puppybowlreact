@@ -24,12 +24,11 @@ function PlayerList() {
 
   return (
     <div>
-      <h2>Puppy List</h2>
-
+      <h3> Search for your Favorite Puppies:</h3>
       <input
         value={searchText}
         onChange={(e) => setSearchText(e.target.value)}
-        placeholder="Search puppies"
+        placeholder="Search puppies here"
       />
 
       <div
@@ -75,9 +74,7 @@ function PlayerList() {
                 to={`/players/${player.id}`}
                 style={{ padding: "10px", fontSize: "12px" }}
               >
-                {" "}
                 See more details on {player.name}
-                {/* <SinglePlayer player={player} /> */}
               </Link>
 
               <RemovePlayer onDelete={() => updatePlayers()} player={player} />
